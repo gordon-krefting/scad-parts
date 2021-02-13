@@ -1,5 +1,3 @@
-use <arm1.scad>
-
 module sg90(center_on_gear = false) {
   v = center_on_gear ? [-5.5, 0, -26.5] : [0, 0, 0];
   

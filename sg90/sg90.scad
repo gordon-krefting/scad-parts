@@ -64,6 +64,18 @@ module sg90_arm1() {
   }
 }
 
+module sg90_arm1_negative() {
+  color("white") {
+    linear_extrude(height=1.4)
+    hull() {
+      circle(d=6);
+      translate([14,0]) circle(d=4);
+    }
+
+    cylinder(d=6.7, h=3.8);
+  }
+}
+
 module sg90_arm2() {
   color("white") difference() {
 
